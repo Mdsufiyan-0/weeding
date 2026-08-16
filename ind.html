@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veer & Zara | Wedding Invitation</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Playfair+Display:wght@400;500&display=swap');
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#f5e7e6;color:#87545b;font-family:'Playfair Display',serif}
+.screen{
+  min-height:100svh; display:flex; align-items:center; justify-content:center;
+  padding:42px 28px; position:relative; overflow:hidden;
+  background:radial-gradient(circle at 50% 35%,#fffaf9 0,#f8e9e8 48%,#efd9d9 100%);
+}
+.screen:before,.screen:after{content:"";position:absolute;border:1px solid #d6a9aa;border-radius:50%;opacity:.35}
+.screen:before{width:270px;height:270px;top:-130px;right:-120px}
+.screen:after{width:300px;height:300px;bottom:-160px;left:-140px}
+.inner{width:min(430px,100%);text-align:center;position:relative;z-index:1}
+.cover{background:linear-gradient(#6d3d4550,#6d3d4540),url("https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=85") center/cover;color:white}
+.cover .inner{padding:35px 22px;background:#7b4a5268;border:1px solid #ffffff55;backdrop-filter:blur(3px);border-radius:10px}
+.cover h1{font:400 67px 'Great Vibes';margin:20px 0 10px}
+.cover p{font-size:13px;letter-spacing:2px}
+.open{display:inline-block;margin-top:28px;border:1px solid #fff;padding:11px 27px;border-radius:30px;color:#fff;text-decoration:none}
+.kicker{font-size:11px;letter-spacing:4px;text-transform:uppercase}
+.script{font:400 45px 'Great Vibes';color:#a3656c}
+.heading{font:400 30px 'Cormorant Garamond';margin:8px 0 18px}
+.line{width:70px;height:1px;background:#c7969b;margin:18px auto}
+.names{font:400 53px 'Great Vibes';line-height:1.05;margin:22px;color:#985c65}
+.heart{font-size:27px;color:#b77980;margin:8px}
+.copy{font-size:13px;line-height:2;color:#936e73}
+.card{background:#fff9f8dd;border:1px solid #e3c8c8;padding:30px 22px;border-radius:4px;box-shadow:0 15px 35px #85555b12}
+.photo{padding:0;background:#ead5d6}
+.photo img{width:100%;height:100svh;object-fit:cover}
+.photo .caption{position:absolute;bottom:35px;left:50%;transform:translateX(-50%);width:85%;background:#fff8f6e8;padding:17px;border-radius:4px}
+.timer{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:25px}
+.t{padding:13px 4px;border:1px solid #d8afb2;background:#fff8f7aa}
+.t b{display:block;font:500 25px 'Cormorant Garamond';color:#8c555d}.t small{font-size:8px;letter-spacing:1px}
+.event{padding:18px 0;border-bottom:1px solid #e3c9c9}.event:last-child{border:0}
+.event h3{font:500 25px 'Cormorant Garamond';color:#925a62}.event p{font-size:12px;line-height:1.8}
+.button{display:inline-block;margin-top:25px;background:#9b6067;color:#fff;text-decoration:none;padding:12px 27px;border-radius:2px;font-size:12px;letter-spacing:1px}
+footer{min-height:75svh;background:#eee0e0}
+footer .script{font-size:58px}
+@media(max-width:360px){.cover h1{font-size:57px}.names{font-size:46px}}
+</style>
+</head>
+<body>
+
+<section class="screen cover">
+  <div class="inner">
+    <div class="kicker">You are invited</div>
+    <h1>Veer &amp; Zara</h1>
+    <p>TO CELEBRATE OUR WEDDING</p>
+    <a class="open" href="#reveal">Open Invitation ♥</a>
+  </div>
+</section>
+
+<section class="screen" id="reveal">
+  <div class="inner card">
+    <div class="script">Secret to Reveal</div>
+    <div class="line"></div>
+    <div class="heart">♡</div>
+    <div class="heading">Our Wedding</div>
+    <div class="names">Veer<br>&amp;<br>Zara</div>
+    <p class="copy">With joyful hearts and the blessings of our families, we invite you to celebrate the beginning of our forever.</p>
+  </div>
+</section>
+
+<section class="screen photo">
+  <img src="https://images.unsplash.com/photo-1460364157752-926b8c7a4b5d?auto=format&fit=crop&w=900&q=85" alt="Wedding couple">
+  <div class="caption">
+    <div class="script">Counting Down to Forever</div>
+    <div class="timer">
+      <div class="t"><b id="d">00</b><small>DAYS</small></div>
+      <div class="t"><b id="h">00</b><small>HRS</small></div>
+      <div class="t"><b id="m">00</b><small>MIN</small></div>
+      <div class="t"><b id="s">00</b><small>SEC</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="screen">
+  <div class="inner">
+    <div class="script">Guest Arrival</div>
+    <div class="line"></div>
+    <div class="event"><h3>Wedding Ceremony</h3><p>18 December 2026 · 7:00 PM</p></div>
+    <div class="event"><h3>Reception</h3><p>19 December 2026 · 7:30 PM</p></div>
+    <div class="event"><h3>Venue</h3><p>Royal Palace<br>Bettiah, West Champaran, Bihar</p>
+      <a class="button" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Royal+Palace+Bettiah+Bihar">VIEW LOCATION</a>
+    </div>
+  </div>
+</section>
+
+<section class="screen">
+  <div class="inner card">
+    <div class="script">Dress Code</div>
+    <div class="line"></div>
+    <div class="heading">Romantic &amp; Elegant</div>
+    <p class="copy">Come dressed in your favourite festive look and make the celebration even more beautiful.</p>
+    <div class="heart">♡</div>
+    <div class="script" style="font-size:38px;margin-top:20px">Wedding Events</div>
+    <p class="copy" style="margin-top:10px">Mehndi · Wedding · Reception</p>
+  </div>
+</section>
+
+<section class="screen">
+  <div class="inner">
+    <div class="script">Accommodation</div>
+    <div class="line"></div>
+    <p class="copy">Special rates have been arranged for guests travelling from out of town. Please contact the family for booking details.</p>
+    <div class="heart" style="margin-top:30px">♡</div>
+    <div class="script" style="font-size:42px">Gifts</div>
+    <p class="copy">Your love, blessings and presence are the greatest gifts we could ask for.</p>
+  </div>
+</section>
+
+<section class="screen">
+  <div class="inner">
+    <div class="script">Send Message</div>
+    <div class="line"></div>
+    <p class="copy">We can't wait to celebrate with you!</p>
+    <a class="button" target="_blank" href="https://wa.me/919999999999?text=Congratulations%20Veer%20%26%20Zara!%20I%20will%20be%20joining%20your%20wedding.">RSVP ON WHATSAPP</a>
+  </div>
+</section>
+
+<footer class="screen">
+  <div class="inner">
+    <div class="script">Veer &amp; Zara</div>
+    <div class="line"></div>
+    <p class="copy">18 · 12 · 2026</p>
+    <p class="copy" style="margin-top:20px">We can't wait to celebrate with you.</p>
+  </div>
+</footer>
+
+<script>
+const wedding=new Date("December 18, 2026 19:00:00").getTime();
+function tick(){
+ const x=Math.max(0,wedding-Date.now());
+ document.getElementById('d').textContent=Math.floor(x/86400000).toString().padStart(2,'0');
+ document.getElementById('h').textContent=Math.floor(x%86400000/3600000).toString().padStart(2,'0');
+ document.getElementById('m').textContent=Math.floor(x%3600000/60000).toString().padStart(2,'0');
+ document.getElementById('s').textContent=Math.floor(x%60000/1000).toString().padStart(2,'0');
+}
+tick();setInterval(tick,1000);
+</script>
+</body>
+</html>
